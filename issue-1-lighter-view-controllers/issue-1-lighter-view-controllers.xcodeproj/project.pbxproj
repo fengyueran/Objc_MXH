@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8245552A1DD424CE00B9B331 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 824555291DD424CE00B9B331 /* main.m */; };
+		8245552D1DD424CE00B9B331 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8245552C1DD424CE00B9B331 /* AppDelegate.m */; };
+		824555301DD424CE00B9B331 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8245552F1DD424CE00B9B331 /* ViewController.m */; };
+		824555331DD424CE00B9B331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824555311DD424CE00B9B331 /* Main.storyboard */; };
+		824555351DD424CE00B9B331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824555341DD424CE00B9B331 /* Assets.xcassets */; };
+		824555381DD424CE00B9B331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824555361DD424CE00B9B331 /* LaunchScreen.storyboard */; };
+		824555431DD424CE00B9B331 /* issue_1_lighter_view_controllersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 824555421DD424CE00B9B331 /* issue_1_lighter_view_controllersTests.m */; };
+		8245554E1DD424CE00B9B331 /* issue_1_lighter_view_controllersUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8245554D1DD424CE00B9B331 /* issue_1_lighter_view_controllersUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8245553F1DD424CE00B9B331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8245551D1DD424CE00B9B331 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 824555241DD424CE00B9B331;
+			remoteInfo = "issue-1-lighter-view-controllers";
+		};
+		8245554A1DD424CE00B9B331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8245551D1DD424CE00B9B331 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 824555241DD424CE00B9B331;
+			remoteInfo = "issue-1-lighter-view-controllers";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		824555251DD424CE00B9B331 /* issue-1-lighter-view-controllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "issue-1-lighter-view-controllers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		824555291DD424CE00B9B331 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8245552B1DD424CE00B9B331 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8245552C1DD424CE00B9B331 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8245552E1DD424CE00B9B331 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8245552F1DD424CE00B9B331 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		824555321DD424CE00B9B331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		824555341DD424CE00B9B331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		824555371DD424CE00B9B331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		824555391DD424CE00B9B331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8245553E1DD424CE00B9B331 /* issue-1-lighter-view-controllersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "issue-1-lighter-view-controllersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		824555421DD424CE00B9B331 /* issue_1_lighter_view_controllersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = issue_1_lighter_view_controllersTests.m; sourceTree = "<group>"; };
+		824555441DD424CE00B9B331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		824555491DD424CE00B9B331 /* issue-1-lighter-view-controllersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "issue-1-lighter-view-controllersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8245554D1DD424CE00B9B331 /* issue_1_lighter_view_controllersUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = issue_1_lighter_view_controllersUITests.m; sourceTree = "<group>"; };
+		8245554F1DD424CE00B9B331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		824555221DD424CE00B9B331 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8245553B1DD424CE00B9B331 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824555461DD424CE00B9B331 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8245551C1DD424CE00B9B331 = {
+			isa = PBXGroup;
+			children = (
+				824555271DD424CE00B9B331 /* issue-1-lighter-view-controllers */,
+				824555411DD424CE00B9B331 /* issue-1-lighter-view-controllersTests */,
+				8245554C1DD424CE00B9B331 /* issue-1-lighter-view-controllersUITests */,
+				824555261DD424CE00B9B331 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		824555261DD424CE00B9B331 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				824555251DD424CE00B9B331 /* issue-1-lighter-view-controllers.app */,
+				8245553E1DD424CE00B9B331 /* issue-1-lighter-view-controllersTests.xctest */,
+				824555491DD424CE00B9B331 /* issue-1-lighter-view-controllersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		824555271DD424CE00B9B331 /* issue-1-lighter-view-controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8245552B1DD424CE00B9B331 /* AppDelegate.h */,
+				8245552C1DD424CE00B9B331 /* AppDelegate.m */,
+				8245552E1DD424CE00B9B331 /* ViewController.h */,
+				8245552F1DD424CE00B9B331 /* ViewController.m */,
+				824555311DD424CE00B9B331 /* Main.storyboard */,
+				824555341DD424CE00B9B331 /* Assets.xcassets */,
+				824555361DD424CE00B9B331 /* LaunchScreen.storyboard */,
+				824555391DD424CE00B9B331 /* Info.plist */,
+				824555281DD424CE00B9B331 /* Supporting Files */,
+			);
+			path = "issue-1-lighter-view-controllers";
+			sourceTree = "<group>";
+		};
+		824555281DD424CE00B9B331 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				824555291DD424CE00B9B331 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		824555411DD424CE00B9B331 /* issue-1-lighter-view-controllersTests */ = {
+			isa = PBXGroup;
+			children = (
+				824555421DD424CE00B9B331 /* issue_1_lighter_view_controllersTests.m */,
+				824555441DD424CE00B9B331 /* Info.plist */,
+			);
+			path = "issue-1-lighter-view-controllersTests";
+			sourceTree = "<group>";
+		};
+		8245554C1DD424CE00B9B331 /* issue-1-lighter-view-controllersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8245554D1DD424CE00B9B331 /* issue_1_lighter_view_controllersUITests.m */,
+				8245554F1DD424CE00B9B331 /* Info.plist */,
+			);
+			path = "issue-1-lighter-view-controllersUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		824555241DD424CE00B9B331 /* issue-1-lighter-view-controllers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 824555521DD424CE00B9B331 /* Build configuration list for PBXNativeTarget "issue-1-lighter-view-controllers" */;
+			buildPhases = (
+				824555211DD424CE00B9B331 /* Sources */,
+				824555221DD424CE00B9B331 /* Frameworks */,
+				824555231DD424CE00B9B331 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "issue-1-lighter-view-controllers";
+			productName = "issue-1-lighter-view-controllers";
+			productReference = 824555251DD424CE00B9B331 /* issue-1-lighter-view-controllers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8245553D1DD424CE00B9B331 /* issue-1-lighter-view-controllersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 824555551DD424CE00B9B331 /* Build configuration list for PBXNativeTarget "issue-1-lighter-view-controllersTests" */;
+			buildPhases = (
+				8245553A1DD424CE00B9B331 /* Sources */,
+				8245553B1DD424CE00B9B331 /* Frameworks */,
+				8245553C1DD424CE00B9B331 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				824555401DD424CE00B9B331 /* PBXTargetDependency */,
+			);
+			name = "issue-1-lighter-view-controllersTests";
+			productName = "issue-1-lighter-view-controllersTests";
+			productReference = 8245553E1DD424CE00B9B331 /* issue-1-lighter-view-controllersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		824555481DD424CE00B9B331 /* issue-1-lighter-view-controllersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 824555581DD424CE00B9B331 /* Build configuration list for PBXNativeTarget "issue-1-lighter-view-controllersUITests" */;
+			buildPhases = (
+				824555451DD424CE00B9B331 /* Sources */,
+				824555461DD424CE00B9B331 /* Frameworks */,
+				824555471DD424CE00B9B331 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8245554B1DD424CE00B9B331 /* PBXTargetDependency */,
+			);
+			name = "issue-1-lighter-view-controllersUITests";
+			productName = "issue-1-lighter-view-controllersUITests";
+			productReference = 824555491DD424CE00B9B331 /* issue-1-lighter-view-controllersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8245551D1DD424CE00B9B331 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = snow;
+				TargetAttributes = {
+					824555241DD424CE00B9B331 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8245553D1DD424CE00B9B331 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 824555241DD424CE00B9B331;
+					};
+					824555481DD424CE00B9B331 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 824555241DD424CE00B9B331;
+					};
+				};
+			};
+			buildConfigurationList = 824555201DD424CE00B9B331 /* Build configuration list for PBXProject "issue-1-lighter-view-controllers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8245551C1DD424CE00B9B331;
+			productRefGroup = 824555261DD424CE00B9B331 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				824555241DD424CE00B9B331 /* issue-1-lighter-view-controllers */,
+				8245553D1DD424CE00B9B331 /* issue-1-lighter-view-controllersTests */,
+				824555481DD424CE00B9B331 /* issue-1-lighter-view-controllersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		824555231DD424CE00B9B331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				824555381DD424CE00B9B331 /* LaunchScreen.storyboard in Resources */,
+				824555351DD424CE00B9B331 /* Assets.xcassets in Resources */,
+				824555331DD424CE00B9B331 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8245553C1DD424CE00B9B331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824555471DD424CE00B9B331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		824555211DD424CE00B9B331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				824555301DD424CE00B9B331 /* ViewController.m in Sources */,
+				8245552D1DD424CE00B9B331 /* AppDelegate.m in Sources */,
+				8245552A1DD424CE00B9B331 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8245553A1DD424CE00B9B331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				824555431DD424CE00B9B331 /* issue_1_lighter_view_controllersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		824555451DD424CE00B9B331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8245554E1DD424CE00B9B331 /* issue_1_lighter_view_controllersUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		824555401DD424CE00B9B331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 824555241DD424CE00B9B331 /* issue-1-lighter-view-controllers */;
+			targetProxy = 8245553F1DD424CE00B9B331 /* PBXContainerItemProxy */;
+		};
+		8245554B1DD424CE00B9B331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 824555241DD424CE00B9B331 /* issue-1-lighter-view-controllers */;
+			targetProxy = 8245554A1DD424CE00B9B331 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		824555311DD424CE00B9B331 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				824555321DD424CE00B9B331 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		824555361DD424CE00B9B331 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				824555371DD424CE00B9B331 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		824555501DD424CE00B9B331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		824555511DD424CE00B9B331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		824555531DD424CE00B9B331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "issue-1-lighter-view-controllers/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snow.issue-1-lighter-view-controllers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		824555541DD424CE00B9B331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "issue-1-lighter-view-controllers/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snow.issue-1-lighter-view-controllers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		824555561DD424CE00B9B331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "issue-1-lighter-view-controllersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snow.issue-1-lighter-view-controllersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/issue-1-lighter-view-controllers.app/issue-1-lighter-view-controllers";
+			};
+			name = Debug;
+		};
+		824555571DD424CE00B9B331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "issue-1-lighter-view-controllersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snow.issue-1-lighter-view-controllersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/issue-1-lighter-view-controllers.app/issue-1-lighter-view-controllers";
+			};
+			name = Release;
+		};
+		824555591DD424CE00B9B331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "issue-1-lighter-view-controllersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snow.issue-1-lighter-view-controllersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "issue-1-lighter-view-controllers";
+			};
+			name = Debug;
+		};
+		8245555A1DD424CE00B9B331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "issue-1-lighter-view-controllersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snow.issue-1-lighter-view-controllersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "issue-1-lighter-view-controllers";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		824555201DD424CE00B9B331 /* Build configuration list for PBXProject "issue-1-lighter-view-controllers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824555501DD424CE00B9B331 /* Debug */,
+				824555511DD424CE00B9B331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		824555521DD424CE00B9B331 /* Build configuration list for PBXNativeTarget "issue-1-lighter-view-controllers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824555531DD424CE00B9B331 /* Debug */,
+				824555541DD424CE00B9B331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		824555551DD424CE00B9B331 /* Build configuration list for PBXNativeTarget "issue-1-lighter-view-controllersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824555561DD424CE00B9B331 /* Debug */,
+				824555571DD424CE00B9B331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		824555581DD424CE00B9B331 /* Build configuration list for PBXNativeTarget "issue-1-lighter-view-controllersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824555591DD424CE00B9B331 /* Debug */,
+				8245555A1DD424CE00B9B331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8245551D1DD424CE00B9B331 /* Project object */;
+}
