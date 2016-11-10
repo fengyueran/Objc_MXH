@@ -17,6 +17,7 @@
 		8245554E1DD424CE00B9B331 /* issue_1_lighter_view_controllersUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8245554D1DD424CE00B9B331 /* issue_1_lighter_view_controllersUITests.m */; };
 		8245555F1DD4357B00B9B331 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8245555D1DD4357B00B9B331 /* PhotosViewController.m */; };
 		824555601DD4357B00B9B331 /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8245555E1DD4357B00B9B331 /* PhotosViewController.xib */; };
+		824555631DD4386F00B9B331 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 824555621DD4386F00B9B331 /* ArrayDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		8245555C1DD4357B00B9B331 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
 		8245555D1DD4357B00B9B331 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
 		8245555E1DD4357B00B9B331 /* PhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
+		824555611DD4386F00B9B331 /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
+		824555621DD4386F00B9B331 /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				8245555C1DD4357B00B9B331 /* PhotosViewController.h */,
 				8245555D1DD4357B00B9B331 /* PhotosViewController.m */,
 				8245555E1DD4357B00B9B331 /* PhotosViewController.xib */,
+				824555611DD4386F00B9B331 /* ArrayDataSource.h */,
+				824555621DD4386F00B9B331 /* ArrayDataSource.m */,
 				824555311DD424CE00B9B331 /* Main.storyboard */,
 				824555341DD424CE00B9B331 /* Assets.xcassets */,
 				824555361DD424CE00B9B331 /* LaunchScreen.storyboard */,
@@ -282,6 +287,7 @@
 				824555301DD424CE00B9B331 /* ViewController.m in Sources */,
 				8245555F1DD4357B00B9B331 /* PhotosViewController.m in Sources */,
 				8245552D1DD424CE00B9B331 /* AppDelegate.m in Sources */,
+				824555631DD4386F00B9B331 /* ArrayDataSource.m in Sources */,
 				8245552A1DD424CE00B9B331 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
