@@ -15,6 +15,8 @@
 		824555381DD424CE00B9B331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824555361DD424CE00B9B331 /* LaunchScreen.storyboard */; };
 		824555431DD424CE00B9B331 /* issue_1_lighter_view_controllersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 824555421DD424CE00B9B331 /* issue_1_lighter_view_controllersTests.m */; };
 		8245554E1DD424CE00B9B331 /* issue_1_lighter_view_controllersUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8245554D1DD424CE00B9B331 /* issue_1_lighter_view_controllersUITests.m */; };
+		8245555F1DD4357B00B9B331 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8245555D1DD4357B00B9B331 /* PhotosViewController.m */; };
+		824555601DD4357B00B9B331 /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8245555E1DD4357B00B9B331 /* PhotosViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		824555491DD424CE00B9B331 /* issue-1-lighter-view-controllersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "issue-1-lighter-view-controllersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8245554D1DD424CE00B9B331 /* issue_1_lighter_view_controllersUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = issue_1_lighter_view_controllersUITests.m; sourceTree = "<group>"; };
 		8245554F1DD424CE00B9B331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8245555C1DD4357B00B9B331 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		8245555D1DD4357B00B9B331 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		8245555E1DD4357B00B9B331 /* PhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,9 @@
 				8245552C1DD424CE00B9B331 /* AppDelegate.m */,
 				8245552E1DD424CE00B9B331 /* ViewController.h */,
 				8245552F1DD424CE00B9B331 /* ViewController.m */,
+				8245555C1DD4357B00B9B331 /* PhotosViewController.h */,
+				8245555D1DD4357B00B9B331 /* PhotosViewController.m */,
+				8245555E1DD4357B00B9B331 /* PhotosViewController.xib */,
 				824555311DD424CE00B9B331 /* Main.storyboard */,
 				824555341DD424CE00B9B331 /* Assets.xcassets */,
 				824555361DD424CE00B9B331 /* LaunchScreen.storyboard */,
@@ -244,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				824555381DD424CE00B9B331 /* LaunchScreen.storyboard in Resources */,
+				824555601DD4357B00B9B331 /* PhotosViewController.xib in Resources */,
 				824555351DD424CE00B9B331 /* Assets.xcassets in Resources */,
 				824555331DD424CE00B9B331 /* Main.storyboard in Resources */,
 			);
@@ -271,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				824555301DD424CE00B9B331 /* ViewController.m in Sources */,
+				8245555F1DD4357B00B9B331 /* PhotosViewController.m in Sources */,
 				8245552D1DD424CE00B9B331 /* AppDelegate.m in Sources */,
 				8245552A1DD424CE00B9B331 /* main.m in Sources */,
 			);
