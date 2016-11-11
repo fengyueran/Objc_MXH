@@ -6,8 +6,9 @@
 //  Copyright © 2016 snow. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "AppDelegate.h"//UIApplication的代理
 #import "PhotosViewController.h"
+#import "Store.h"
 
 @interface AppDelegate ()
 
@@ -15,6 +16,9 @@
 
 @implementation AppDelegate
 
++ (instancetype)sharedDelegate {
+    return [UIApplication sharedApplication].delegate;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     PhotosViewController *photosViewController = [[PhotosViewController alloc]initWithNibName:@"PhotosViewController" bundle:nil];
@@ -24,6 +28,14 @@
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+@synthesize store = _store;
+- (Store *)store {
+    if (_store == nil) {
+        _store = [Store store];
+    }
+    return _store;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
