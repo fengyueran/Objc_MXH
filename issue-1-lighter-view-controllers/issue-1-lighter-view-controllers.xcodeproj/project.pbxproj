@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8245552A1DD424CE00B9B331 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 824555291DD424CE00B9B331 /* main.m */; };
 		8245552D1DD424CE00B9B331 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8245552C1DD424CE00B9B331 /* AppDelegate.m */; };
-		824555301DD424CE00B9B331 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8245552F1DD424CE00B9B331 /* ViewController.m */; };
 		824555331DD424CE00B9B331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824555311DD424CE00B9B331 /* Main.storyboard */; };
 		824555351DD424CE00B9B331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824555341DD424CE00B9B331 /* Assets.xcassets */; };
 		824555381DD424CE00B9B331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824555361DD424CE00B9B331 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,14 @@
 		8245555F1DD4357B00B9B331 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8245555D1DD4357B00B9B331 /* PhotosViewController.m */; };
 		824555601DD4357B00B9B331 /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8245555E1DD4357B00B9B331 /* PhotosViewController.xib */; };
 		824555631DD4386F00B9B331 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 824555621DD4386F00B9B331 /* ArrayDataSource.m */; };
+		824555681DD4433700B9B331 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 824555661DD4433700B9B331 /* PhotoCell.m */; };
+		824555691DD4433700B9B331 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 824555671DD4433700B9B331 /* PhotoCell.xib */; };
+		8245556D1DD4455D00B9B331 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8245556C1DD4455D00B9B331 /* Photo.m */; };
+		824555701DD4466100B9B331 /* PhotoCell+ConfigureForPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 8245556F1DD4466100B9B331 /* PhotoCell+ConfigureForPhoto.m */; };
+		824E96D71DD592660024DD36 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 824E96D61DD592660024DD36 /* Store.m */; };
+		824E96D91DD5B5C20024DD36 /* photodata.bin in Resources */ = {isa = PBXBuildFile; fileRef = 824E96D81DD5B5C20024DD36 /* photodata.bin */; };
+		824E96DB1DD5B60B0024DD36 /* photo-data.bin in Resources */ = {isa = PBXBuildFile; fileRef = 824E96DA1DD5B60B0024DD36 /* photo-data.bin */; };
+		824E96DE1DD5BBF50024DD36 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 824E96DD1DD5BBF50024DD36 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +49,6 @@
 		824555291DD424CE00B9B331 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8245552B1DD424CE00B9B331 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8245552C1DD424CE00B9B331 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8245552E1DD424CE00B9B331 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8245552F1DD424CE00B9B331 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		824555321DD424CE00B9B331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		824555341DD424CE00B9B331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		824555371DD424CE00B9B331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +64,19 @@
 		8245555E1DD4357B00B9B331 /* PhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
 		824555611DD4386F00B9B331 /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
 		824555621DD4386F00B9B331 /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
+		824555651DD4433700B9B331 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		824555661DD4433700B9B331 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		824555671DD4433700B9B331 /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		8245556B1DD4455D00B9B331 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		8245556C1DD4455D00B9B331 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		8245556E1DD4466100B9B331 /* PhotoCell+ConfigureForPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PhotoCell+ConfigureForPhoto.h"; sourceTree = "<group>"; };
+		8245556F1DD4466100B9B331 /* PhotoCell+ConfigureForPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PhotoCell+ConfigureForPhoto.m"; sourceTree = "<group>"; };
+		824E96D51DD592660024DD36 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		824E96D61DD592660024DD36 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		824E96D81DD5B5C20024DD36 /* photodata.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = photodata.bin; sourceTree = "<group>"; };
+		824E96DA1DD5B60B0024DD36 /* photo-data.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "photo-data.bin"; sourceTree = "<group>"; };
+		824E96DC1DD5BBF50024DD36 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		824E96DD1DD5BBF50024DD36 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,13 +127,17 @@
 		824555271DD424CE00B9B331 /* issue-1-lighter-view-controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8245556A1DD4453400B9B331 /* Model */,
 				8245552B1DD424CE00B9B331 /* AppDelegate.h */,
 				8245552C1DD424CE00B9B331 /* AppDelegate.m */,
-				8245552E1DD424CE00B9B331 /* ViewController.h */,
-				8245552F1DD424CE00B9B331 /* ViewController.m */,
 				8245555C1DD4357B00B9B331 /* PhotosViewController.h */,
 				8245555D1DD4357B00B9B331 /* PhotosViewController.m */,
 				8245555E1DD4357B00B9B331 /* PhotosViewController.xib */,
+				824555651DD4433700B9B331 /* PhotoCell.h */,
+				824555661DD4433700B9B331 /* PhotoCell.m */,
+				8245556E1DD4466100B9B331 /* PhotoCell+ConfigureForPhoto.h */,
+				8245556F1DD4466100B9B331 /* PhotoCell+ConfigureForPhoto.m */,
+				824555671DD4433700B9B331 /* PhotoCell.xib */,
 				824555611DD4386F00B9B331 /* ArrayDataSource.h */,
 				824555621DD4386F00B9B331 /* ArrayDataSource.m */,
 				824555311DD424CE00B9B331 /* Main.storyboard */,
@@ -130,6 +152,7 @@
 		824555281DD424CE00B9B331 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				824E96DA1DD5B60B0024DD36 /* photo-data.bin */,
 				824555291DD424CE00B9B331 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -151,6 +174,20 @@
 				8245554F1DD424CE00B9B331 /* Info.plist */,
 			);
 			path = "issue-1-lighter-view-controllersUITests";
+			sourceTree = "<group>";
+		};
+		8245556A1DD4453400B9B331 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				824E96D81DD5B5C20024DD36 /* photodata.bin */,
+				8245556B1DD4455D00B9B331 /* Photo.h */,
+				8245556C1DD4455D00B9B331 /* Photo.m */,
+				824E96D51DD592660024DD36 /* Store.h */,
+				824E96D61DD592660024DD36 /* Store.m */,
+				824E96DC1DD5BBF50024DD36 /* User.h */,
+				824E96DD1DD5BBF50024DD36 /* User.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,10 +293,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824E96DB1DD5B60B0024DD36 /* photo-data.bin in Resources */,
+				824E96D91DD5B5C20024DD36 /* photodata.bin in Resources */,
 				824555381DD424CE00B9B331 /* LaunchScreen.storyboard in Resources */,
 				824555601DD4357B00B9B331 /* PhotosViewController.xib in Resources */,
 				824555351DD424CE00B9B331 /* Assets.xcassets in Resources */,
 				824555331DD424CE00B9B331 /* Main.storyboard in Resources */,
+				824555691DD4433700B9B331 /* PhotoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,11 +324,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				824555301DD424CE00B9B331 /* ViewController.m in Sources */,
+				824555701DD4466100B9B331 /* PhotoCell+ConfigureForPhoto.m in Sources */,
+				8245556D1DD4455D00B9B331 /* Photo.m in Sources */,
+				824E96DE1DD5BBF50024DD36 /* User.m in Sources */,
+				824555681DD4433700B9B331 /* PhotoCell.m in Sources */,
 				8245555F1DD4357B00B9B331 /* PhotosViewController.m in Sources */,
 				8245552D1DD424CE00B9B331 /* AppDelegate.m in Sources */,
 				824555631DD4386F00B9B331 /* ArrayDataSource.m in Sources */,
 				8245552A1DD424CE00B9B331 /* main.m in Sources */,
+				824E96D71DD592660024DD36 /* Store.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +556,7 @@
 				824555541DD424CE00B9B331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		824555551DD424CE00B9B331 /* Build configuration list for PBXNativeTarget "issue-1-lighter-view-controllersTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +565,7 @@
 				824555571DD424CE00B9B331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		824555581DD424CE00B9B331 /* Build configuration list for PBXNativeTarget "issue-1-lighter-view-controllersUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +574,7 @@
 				8245555A1DD424CE00B9B331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
