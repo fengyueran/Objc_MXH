@@ -13,9 +13,10 @@
 #import "PhotoCell+ConfigureForPhoto.h"
 #import "AppDelegate.h"
 #import "Store.h"
+#import "PhotoViewController.h"
 
 static NSString * const PhotoCellIdentifier = @"PhotoCell";
-@interface PhotosViewController ()
+@interface PhotosViewController ()<UITableViewDelegate>
 @property (nonatomic, strong) ArrayDataSource *photosArrayDataSource;
 
 @end
@@ -33,6 +34,8 @@ static NSString * const PhotoCellIdentifier = @"PhotoCell";
     TableViewCellConfigureBlock configureCell = ^(PhotoCell *cell, Photo *photo) {
         [cell configureForPhoto:photo];
     };
+    
+    //Store类来获取数据
     NSArray *photos = [AppDelegate sharedDelegate].store.sortedPhotos;
     
     //要实现UITableViewDataSource协议方法，必须有相关的数据，这里为photos数组。
@@ -45,6 +48,16 @@ static NSString * const PhotoCellIdentifier = @"PhotoCell";
 */
     self.tableView.dataSource = self.photosArrayDataSource;
     [self.tableView registerNib:[PhotoCell nib] forCellReuseIdentifier:PhotoCellIdentifier];
+}
+
+#pragma UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    PhotoViewController *photoViewController = [[PhotoViewController alloc]
+                                                initWithNibName:@"PhotoViewController" bundle:nil];
+    photoViewController.photo = [self.photosArrayDataSource itemAtIndexPath:indexPath];
+    [self.navigationController pushViewController:photoViewController animated:YES];
+    
 }
 
 @end
