@@ -17,5 +17,5 @@
 @property (nonatomic) double rating;
 
 @property (nonatomic, weak) User *user;
-
+- (NSString *)authorFullName;
 @end

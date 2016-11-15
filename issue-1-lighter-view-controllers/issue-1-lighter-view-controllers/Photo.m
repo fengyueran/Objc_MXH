@@ -17,6 +17,21 @@ static NSString * const UserKey = @"user";
 
 @implementation Photo
 
+- (NSString*)description
+{
+    return [NSString stringWithFormat:@"<%@: %p> (%lld) \"%@\"",
+            [self class], self, (long long) self.identifier, self.name];
+}
+
+//- (void)encodeWithCoder:(NSCoder*)coder
+//{
+//    [coder encodeInt64:self.identifier forKey:IdentifierKey];
+//    [coder encodeObject:self.name forKey:NameKey];
+//    [coder encodeObject:self.creationDate forKey:CreationDateKey];
+//    [coder encodeDouble:self.rating forKey:RatingKey];
+//    [coder encodeConditionalObject:self.user forKey:UserKey];
+//}
+
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super init];
     if (self) {
@@ -27,6 +42,10 @@ static NSString * const UserKey = @"user";
         _user = [aDecoder decodeObjectOfClass:[User class] forKey:UserKey];
     }
     return self;
+}
+
+- (NSString *)authorFullName {
+    return self.user.fullName;
 }
 
 @end
