@@ -14,6 +14,8 @@
 
 @end
 
+static BOOL isRunningTests(void) __attribute__((const));
+
 @implementation AppDelegate
 
 + (instancetype)sharedDelegate {
@@ -21,6 +23,10 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+//    if (isRunningTests()) {
+//        return YES;
+//    }
     PhotosViewController *photosViewController = [[PhotosViewController alloc]initWithNibName:@"PhotosViewController" bundle:nil];
     UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:photosViewController];
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
@@ -30,12 +36,18 @@
     return YES;
 }
 
+//@synthesize告诉编译器：如果你没有手动实现setter和getter方法，编译器会自动帮你生成,可省略。
+//store = _store,这个是帮你的属性store绑定一个成员变量_store。
 @synthesize store = _store;
 - (Store *)store {
     if (_store == nil) {
         _store = [Store store];
     }
     return _store;
+}
+
+static BOOL isRunningTests(void) {
+    return [[[[NSProcessInfo processInfo] environment][@"XCInjectBundle"] pathExtension]isEqualToString:@"octest"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
