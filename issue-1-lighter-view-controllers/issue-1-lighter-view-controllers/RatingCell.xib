@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RatingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="ltx-ZY-vh1">
+                        <rect key="frame" x="65" y="6" width="32" height="32"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="Aet-vG-9lz">
+                        <rect key="frame" x="103" y="6" width="32" height="32"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="AjU-ca-uYA">
+                        <rect key="frame" x="141" y="6" width="32" height="32"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="2C1-Z9-EZS">
+                        <rect key="frame" x="217" y="6" width="32" height="32"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="IJJ-Qr-EVL">
+                        <rect key="frame" x="179" y="6" width="32" height="32"/>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star.png" width="32" height="32"/>
+    </resources>
+</document>
