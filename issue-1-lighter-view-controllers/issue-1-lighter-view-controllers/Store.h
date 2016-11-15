@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+
+//Store 对象会关心数据加载、缓存和设置数据栈。它也经常被称为服务层或者仓库。
 @interface Store : NSObject
 
 + (instancetype)store;

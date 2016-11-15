@@ -34,7 +34,7 @@
     //NSKeyedUnarchiver:从二进制流读取对象。NSKeyedArchiver:把对象写到二进制流中去。
     //NSCoder 是一个抽象类，抽象类不能被实例话，只能提供一些想让子类继承的方法。NSKeyedUnarchiver : NSCoder 
     NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc]initForReadingWithData:data];
-    //根据Key值寻找相关类的decode或encode方法
+    //根据Key值寻找相关类（User,Photo的decode或encode方法
     _users = [unarchiver decodeObjectOfClass:[NSArray class] forKey:@"users"];
     _photos = [unarchiver decodeObjectOfClass:[NSArray class] forKey:@"photos"];
     [unarchiver finishDecoding];
