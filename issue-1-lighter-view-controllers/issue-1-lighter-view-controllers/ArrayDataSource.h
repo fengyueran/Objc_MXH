@@ -6,7 +6,7 @@
 //  Copyright © 2016 snow. All rights reserved.
 /*  ArrayDataSource类用来代替UITableView的UITableViewDataSource，
     实现UITableViewDataSource的协议方法，从而使controller不用实现UITableViewDataSource
-    协议方法,轻量化controller.
+    协议方法,轻量化controller,可重用 .
 */
 
 #import <Foundation/Foundation.h>
