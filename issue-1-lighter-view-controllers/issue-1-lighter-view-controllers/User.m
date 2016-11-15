@@ -30,4 +30,12 @@ static NSString * const PhotosKey = @"photos";
     return self;
 }
 
+- (NSString *)fullName {
+   return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
+}
+
+- (NSInteger)numberOfPhotosTaken {
+    return self.photos.count;
+}
+
 @end

@@ -17,4 +17,7 @@
 @property (nonatomic, copy) NSString *lastName;
 @property (nonatomic, copy) NSArray *photos;
 
+- (NSString *)fullName;
+- (NSInteger)numberOfPhotosTaken;
+
 @end
