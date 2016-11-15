@@ -15,6 +15,7 @@
 		824952281DDABAC200B877D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824952261DDABAC200B877D8 /* LaunchScreen.storyboard */; };
 		824952331DDABAC200B877D8 /* issue_4_full_core_data_applicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 824952321DDABAC200B877D8 /* issue_4_full_core_data_applicationTests.m */; };
 		8249523E1DDABAC200B877D8 /* issue_4_full_core_data_applicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8249523D1DDABAC200B877D8 /* issue_4_full_core_data_applicationUITests.m */; };
+		8249524D1DDABB6800B877D8 /* PersistentStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8249524C1DDABB6800B877D8 /* PersistentStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		824952391DDABAC200B877D8 /* issue-4-full-core-data-applicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "issue-4-full-core-data-applicationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8249523D1DDABAC200B877D8 /* issue_4_full_core_data_applicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = issue_4_full_core_data_applicationUITests.m; sourceTree = "<group>"; };
 		8249523F1DDABAC200B877D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8249524B1DDABB6800B877D8 /* PersistentStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentStack.h; sourceTree = "<group>"; };
+		8249524C1DDABB6800B877D8 /* PersistentStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistentStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				8249521C1DDABAC200B877D8 /* AppDelegate.m */,
 				8249521E1DDABAC200B877D8 /* ViewController.h */,
 				8249521F1DDABAC200B877D8 /* ViewController.m */,
+				8249524B1DDABB6800B877D8 /* PersistentStack.h */,
+				8249524C1DDABB6800B877D8 /* PersistentStack.m */,
 				824952211DDABAC200B877D8 /* Main.storyboard */,
 				824952241DDABAC200B877D8 /* Assets.xcassets */,
 				824952261DDABAC200B877D8 /* LaunchScreen.storyboard */,
@@ -273,6 +278,7 @@
 				824952201DDABAC200B877D8 /* ViewController.m in Sources */,
 				8249521D1DDABAC200B877D8 /* AppDelegate.m in Sources */,
 				8249521A1DDABAC200B877D8 /* main.m in Sources */,
+				8249524D1DDABB6800B877D8 /* PersistentStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
