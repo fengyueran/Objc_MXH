@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		8249521A1DDABAC200B877D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 824952191DDABAC200B877D8 /* main.m */; };
 		8249521D1DDABAC200B877D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8249521C1DDABAC200B877D8 /* AppDelegate.m */; };
-		824952201DDABAC200B877D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8249521F1DDABAC200B877D8 /* ViewController.m */; };
 		824952231DDABAC200B877D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824952211DDABAC200B877D8 /* Main.storyboard */; };
 		824952251DDABAC200B877D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824952241DDABAC200B877D8 /* Assets.xcassets */; };
 		824952281DDABAC200B877D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824952261DDABAC200B877D8 /* LaunchScreen.storyboard */; };
 		824952331DDABAC200B877D8 /* issue_4_full_core_data_applicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 824952321DDABAC200B877D8 /* issue_4_full_core_data_applicationTests.m */; };
 		8249523E1DDABAC200B877D8 /* issue_4_full_core_data_applicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8249523D1DDABAC200B877D8 /* issue_4_full_core_data_applicationUITests.m */; };
 		8249524D1DDABB6800B877D8 /* PersistentStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8249524C1DDABB6800B877D8 /* PersistentStack.m */; };
+		824952501DDACDC800B877D8 /* NestedTodoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8249524E1DDACDC800B877D8 /* NestedTodoList.xcdatamodeld */; };
+		824952551DDACF9B00B877D8 /* Item+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 824952521DDACF9B00B877D8 /* Item+CoreDataProperties.m */; };
+		824952561DDACF9B00B877D8 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 824952541DDACF9B00B877D8 /* Item.m */; };
+		824952591DDAD02E00B877D8 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 824952581DDAD02E00B877D8 /* Store.m */; };
+		8249525C1DDAD45600B877D8 /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8249525B1DDAD45600B877D8 /* ItemViewController.m */; };
+		8249525F1DDAD7E300B877D8 /* FetchedResultsControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8249525E1DDAD7E300B877D8 /* FetchedResultsControllerDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +45,6 @@
 		824952191DDABAC200B877D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8249521B1DDABAC200B877D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8249521C1DDABAC200B877D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8249521E1DDABAC200B877D8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8249521F1DDABAC200B877D8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		824952221DDABAC200B877D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		824952241DDABAC200B877D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		824952271DDABAC200B877D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +57,17 @@
 		8249523F1DDABAC200B877D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8249524B1DDABB6800B877D8 /* PersistentStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentStack.h; sourceTree = "<group>"; };
 		8249524C1DDABB6800B877D8 /* PersistentStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistentStack.m; sourceTree = "<group>"; };
+		8249524F1DDACDC800B877D8 /* NestedTodoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NestedTodoList.xcdatamodel; sourceTree = "<group>"; };
+		824952511DDACF9B00B877D8 /* Item+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Item+CoreDataProperties.h"; sourceTree = "<group>"; };
+		824952521DDACF9B00B877D8 /* Item+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Item+CoreDataProperties.m"; sourceTree = "<group>"; };
+		824952531DDACF9B00B877D8 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		824952541DDACF9B00B877D8 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		824952571DDAD02E00B877D8 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		824952581DDAD02E00B877D8 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		8249525A1DDAD45600B877D8 /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
+		8249525B1DDAD45600B877D8 /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
+		8249525D1DDAD7E300B877D8 /* FetchedResultsControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchedResultsControllerDataSource.h; sourceTree = "<group>"; };
+		8249525E1DDAD7E300B877D8 /* FetchedResultsControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchedResultsControllerDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +118,21 @@
 		824952171DDABAC200B877D8 /* issue-4-full-core-data-application */ = {
 			isa = PBXGroup;
 			children = (
+				8249524E1DDACDC800B877D8 /* NestedTodoList.xcdatamodeld */,
+				824952511DDACF9B00B877D8 /* Item+CoreDataProperties.h */,
+				824952521DDACF9B00B877D8 /* Item+CoreDataProperties.m */,
+				824952531DDACF9B00B877D8 /* Item.h */,
+				824952541DDACF9B00B877D8 /* Item.m */,
+				824952571DDAD02E00B877D8 /* Store.h */,
+				824952581DDAD02E00B877D8 /* Store.m */,
 				8249521B1DDABAC200B877D8 /* AppDelegate.h */,
 				8249521C1DDABAC200B877D8 /* AppDelegate.m */,
-				8249521E1DDABAC200B877D8 /* ViewController.h */,
-				8249521F1DDABAC200B877D8 /* ViewController.m */,
 				8249524B1DDABB6800B877D8 /* PersistentStack.h */,
 				8249524C1DDABB6800B877D8 /* PersistentStack.m */,
+				8249525A1DDAD45600B877D8 /* ItemViewController.h */,
+				8249525B1DDAD45600B877D8 /* ItemViewController.m */,
+				8249525D1DDAD7E300B877D8 /* FetchedResultsControllerDataSource.h */,
+				8249525E1DDAD7E300B877D8 /* FetchedResultsControllerDataSource.m */,
 				824952211DDABAC200B877D8 /* Main.storyboard */,
 				824952241DDABAC200B877D8 /* Assets.xcassets */,
 				824952261DDABAC200B877D8 /* LaunchScreen.storyboard */,
@@ -275,10 +298,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				824952201DDABAC200B877D8 /* ViewController.m in Sources */,
+				824952551DDACF9B00B877D8 /* Item+CoreDataProperties.m in Sources */,
+				8249525C1DDAD45600B877D8 /* ItemViewController.m in Sources */,
 				8249521D1DDABAC200B877D8 /* AppDelegate.m in Sources */,
 				8249521A1DDABAC200B877D8 /* main.m in Sources */,
+				824952501DDACDC800B877D8 /* NestedTodoList.xcdatamodeld in Sources */,
+				824952561DDACF9B00B877D8 /* Item.m in Sources */,
+				8249525F1DDAD7E300B877D8 /* FetchedResultsControllerDataSource.m in Sources */,
 				8249524D1DDABB6800B877D8 /* PersistentStack.m in Sources */,
+				824952591DDAD02E00B877D8 /* Store.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +548,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8249524E1DDACDC800B877D8 /* NestedTodoList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8249524F1DDACDC800B877D8 /* NestedTodoList.xcdatamodel */,
+			);
+			currentVersion = 8249524F1DDACDC800B877D8 /* NestedTodoList.xcdatamodel */;
+			path = NestedTodoList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8249520D1DDABAC200B877D8 /* Project object */;
 }

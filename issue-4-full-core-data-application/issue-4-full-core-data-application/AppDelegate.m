@@ -7,27 +7,61 @@
 //
 
 #import "AppDelegate.h"
+#import "ItemViewController.h"
+#import "PersistentStack.h"
+#import "Store.h"
+#import "Item.h"
 
 @interface AppDelegate ()
 
+@property (nonatomic, strong) Store *store;
+@property (nonatomic, strong) PersistentStack *persistentStack;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    ItemViewController *rootViewController = [[ItemViewController alloc]init];
+     UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:rootViewController];
+    NSAssert([rootViewController isKindOfClass:[ItemViewController class]], @"Should have an item view controller");
+    self.persistentStack = [[PersistentStack alloc]initWithStoreURL:self.storeURL modelURL:self.modelURL];
+    self.store = [[Store alloc]init];
+    self.store.managedObjectContext = self.persistentStack.managedObjectContext;
+    rootViewController.parent = self.store.rootItem;
+    
+    [self.window setRootViewController:navigationController];
+    
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+/**
+ 添加Student实体的测试数据
+ */
+- (void)addTestData {
+    for (int i = 0; i < 15; i++) {
+        Item *item = [NSEntityDescription insertNewObjectForEntityForName:@"Item" inManagedObjectContext:self.persistentStack.managedObjectContext];
+        item.title = [NSString stringWithFormat:@"mxh %d", i];
+        item.order = @(i+15);
+    }
+    
+    NSError *error = nil;
+    if (self.persistentStack.managedObjectContext.hasChanges) {
+        [self.persistentStack.managedObjectContext save:&error];
+    }
+}
+
+- (NSURL *)storeURL {
+    NSURL *documentDirectory = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:NULL];
+    return [documentDirectory URLByAppendingPathComponent:@"db.sqlite"];
+}
+
+- (NSURL *)modelURL {
+    return [[NSBundle mainBundle]URLForResource:@"NestedTodoList" withExtension:@"momd"];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [self.store.managedObjectContext save:NULL];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
