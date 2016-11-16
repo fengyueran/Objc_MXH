@@ -7,31 +7,81 @@
 //
 
 #import "FetchedResultsControllerDataSource.h"
+#import <UIKit/UIKit.h>
 
 @interface FetchedResultsControllerDataSource ()
+
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
 @implementation FetchedResultsControllerDataSource
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (id)initWithTableView:(UITableView *)tableView {
+    self = [super init];
+    if (self) {
+        self.tableView = tableView;
+        self.tableView.dataSource = self;
+    }
+    return self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma UITableViewDataSourece
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.fetchedResultsController.sections.count;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex {
+    id<NSFetchedResultsSectionInfo> section = self.fetchedResultsController.sections[sectionIndex];
+    return section.numberOfObjects;
 }
-*/
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    id object = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    id cell = [tableView dequeueReusableCellWithIdentifier:self.reuseIdentifier forIndexPath:indexPath];
+    [self.delegate configureCell:cell withObject:object];
+    return cell;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [self.delegate deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
+    }
+}
+
+
+#pragma mark NSFetchedResultsControllerDelegate
+
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
+    [self.tableView beginUpdates];
+}
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    [self.tableView endUpdates];
+}
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
+    if (type == NSFetchedResultsChangeInsert) {
+        [self.tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    } else if(type == NSFetchedResultsChangeMove) {
+        [self.tableView moveRowAtIndexPath:indexPath toIndexPath:newIndexPath];
+    } else if (type == NSFetchedResultsChangeDelete) {
+        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    } else {
+        NSAssert(NO,@"");
+    }
+}
+
+
+- (void)setFetchedResultsController:(NSFetchedResultsController *)fetchedResultsController {
+        NSAssert(_fetchedResultsController == nil, @"TODO: you can currently only assign this property once");
+    _fetchedResultsController = fetchedResultsController;
+    fetchedResultsController.delegate = self;
+    [fetchedResultsController performFetch:NULL];
+}
 @end
