@@ -6,8 +6,14 @@
 //  Copyright © 2016 snow. All rights reserved.
 //
 
+@class Item;
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
 @interface Store : NSObject
+
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+
+- (Item *)rootItem;
 
 @end
