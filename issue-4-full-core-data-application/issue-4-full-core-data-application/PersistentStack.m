@@ -28,6 +28,7 @@
     return self;
 }
 
+//这段代码建立了一个真正简单的 Core Data 堆栈：一个拥有持久化存储协调器的 managed object context，其拥有一个持久化存储.
 - (void)setupManagedObjectContext {
     self.managedObjectContext = [[NSManagedObjectContext alloc]initWithConcurrencyType:NSMainQueueConcurrencyType];
     self.managedObjectContext.persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]initWithManagedObjectModel:self.managedObjectModel];
