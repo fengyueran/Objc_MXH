@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ItemViewController.h
 //  issue-4-full-core-data-application
 //
 //  Created by intern08 on 11/15/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ItemViewController : UITableViewController
 
 @end
-
