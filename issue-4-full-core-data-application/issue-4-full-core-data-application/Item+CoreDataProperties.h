@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSSet<Item *> *children;
 @property (nullable, nonatomic, retain) Item *parent;
 
+
+
+
 @end
 
 @interface Item (CoreDataGeneratedAccessors)

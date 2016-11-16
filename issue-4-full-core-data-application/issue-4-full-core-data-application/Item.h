@@ -10,10 +10,13 @@
 #import <CoreData/CoreData.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+//relationship 表示当前实体和其他实体的关系
 @interface Item : NSManagedObject
++ (instancetype)insertItemWithTitle:(NSString *)title
+                             parent:(Item *)parent
+             inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
+- (NSFetchedResultsController *)childrenFetchedResultsController;
 
-// Insert code here to declare functionality of your managed object subclass
 
 @end
 

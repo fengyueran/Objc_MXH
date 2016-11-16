@@ -10,6 +10,34 @@
 
 @implementation Item
 
-// Insert code here to add functionality to your managed object subclass
+
++ (instancetype)insertItemWithTitle:(NSString *)title
+                             parent:(Item *)parent
+             inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
+{
+    NSUInteger order = parent.numberOfChildren;
+    Item *item = [NSEntityDescription insertNewObjectForEntityForName:@"Item" inManagedObjectContext:managedObjectContext];
+    item.title = title;
+    item.parent = parent;
+    item.order = @(order);
+    return item;
+}
+
+- (NSFetchedResultsController *)childrenFetchedResultsController {
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Item"];
+    request.predicate = [NSPredicate predicateWithFormat:@"parent = %@", self];
+    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"order" ascending:YES]];
+    return [[NSFetchedResultsController alloc]initWithFetchRequest:request managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    
+}
+
+//+ (NSString *)entityName {
+//    return @"Item";
+//}
+
+- (NSUInteger)numberOfChildren {
+    return self.children.count;
+}
+
 
 @end
